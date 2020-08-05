@@ -566,7 +566,6 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -1149,9 +1148,9 @@ section {
 
 
 .main-container {
-  margin: 4em auto 0 auto;
-  width: 650px;
+  width: 100%;
 }
+
 .main-container .controls {
   margin: 0 auto;
   padding: 2em 0 0 0;
@@ -1172,9 +1171,7 @@ label {
 label:hover {
   color: #05bbaf;
 }
-.coverflow-list {
-  width: 100%;
-}
+
 .coverflow-list .coverflow-item {
   display: inline-block;
   background: #414141;
@@ -1192,6 +1189,20 @@ label:hover {
   width: 150px;
   opacity: 0.5;
 }
+
+@media (max-width: 746px) {
+  .coverflow-list .coverflow-item .album-cover {
+    display: block;
+    height: 125px;
+    margin: 0;
+  }
+  .coverflow-list .coverflow-item .album-cover img {
+    height: 125px;
+    width: 125px;
+    opacity: 0.5;
+  }
+}
+
 .coverflow-list .coverflow-item .album-name {
   text-align: center;
   display: block;
